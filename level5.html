@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+
+        ul:not(:nth-child(n+2)) {
+            background-color: green;
+        }
+
+        ul:last-child:not(a) {
+            background-color: blue;
+        }
+
+        li:not(.no-strike) {
+            color: darkgrey;
+        }
+
+        li:not(:nth-child(2n+1)) {
+            background-color: red;
+        }
+
+        li:not([class="no-strike"]) {
+            text-decoration: line-through;
+        }
+
+        li[data-content="whoa"]::before {
+            content: "" attr(data-content) "--";
+
+        }
+
+        li[data-content="test"]::before {
+            content: "" attr(data-content) "--";
+
+        }
+
+        li[data-content="test"]::before {
+            content: "" attr(data-content) "--";
+
+        }
+
+        li[class="before-content"]:before {
+
+            content: "--" open-quote 'xx';
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+level 4
+
+<ul>
+    <li class="no-strike">1</li>
+    <li class="no-strike">2</li>
+    <li data-content='whoa'>3</li>
+    <li data-content='test'>4</li>
+    <li class="before-content">5</li>
+    <li class="before-content">6</li>
+    <li class="before-content">7</li>
+    <li>8</li>
+</ul>
+
+<ul>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+</ul>
+
+<ul>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+</ul>
+
+<ul>
+    <li>15</li>
+    <li>16</li>
+</ul>
+
+</body>
+</html>
