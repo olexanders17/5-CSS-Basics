@@ -2,56 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>level 5</title>
+    <title>level 2</title>
     <style>
 
 
         ul:not(:nth-child(n+2)) {
             background-color: green;
+
         }
 
         ul:last-child:not(a) {
             background-color: blue;
+
         }
 
-        li:not(.no-strike) {
-            color: darkgrey;
-        }
+
 
         li:not(:nth-child(2n+1)) {
             background-color: red;
         }
 
-        li:not([class="no-strike"]) {
-            text-decoration: line-through;
-        }
 
-        li[data-content="whoa"]::before {
-            content: "" attr(data-content) "--";
-
-        }
-
-        li[data-content="test"]::before {
-            content: "" attr(data-content) "--";
-
-        }
-
-        li[data-content="test"]::before {
-            content: "" attr(data-content) "--";
-
-        }
-
-        li[class="before-content"]:before {
-
-            content: "--" open-quote 'xx';
-
-        }
 
 
     </style>
 </head>
 <body>
-
 
 
 <ul>
